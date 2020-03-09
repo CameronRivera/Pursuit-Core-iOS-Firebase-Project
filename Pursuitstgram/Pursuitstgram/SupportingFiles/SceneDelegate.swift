@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -21,6 +22,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
+        if let _ = Auth.auth().currentUser {
+            UIViewController.showViewController(storyboardName: "UserAccount", viewControllerId: "FeedNavigationController")
+        } else{
+            UIViewController.showViewController(storyboardName: nil, viewControllerId: nil)
+        }
+        
         window?.rootViewController = UINavigationController(rootViewController: LoginViewController())
         window?.makeKeyAndVisible()
     }

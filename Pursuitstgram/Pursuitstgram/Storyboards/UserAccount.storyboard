@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Feed-->
+        <scene sceneID="QZk-DA-pbC">
+            <objects>
+                <viewController storyboardIdentifier="FeedViewController" id="n5S-mt-gjg" customClass="FeedViewController" customModule="Pursuitstgram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k2j-tl-U4k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tjB-1k-EJn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uF8-Pb-Puv">
+                                    <size key="itemSize" width="365" height="336"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="feedCell" id="pWn-5G-ktI" customClass="FeedCell" customModule="Pursuitstgram" customModuleProvider="target">
+                                        <rect key="frame" x="24.5" y="0.0" width="365" height="336"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Y0p-s9-E3d">
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="336"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1DK-Vm-8HS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="365" height="336"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1DK-Vm-8HS" firstAttribute="top" secondItem="Y0p-s9-E3d" secondAttribute="top" id="3SA-w6-moO"/>
+                                                <constraint firstAttribute="bottom" secondItem="1DK-Vm-8HS" secondAttribute="bottom" id="MIO-Tc-3LG"/>
+                                                <constraint firstAttribute="trailing" secondItem="1DK-Vm-8HS" secondAttribute="trailing" id="NUK-0X-YbB"/>
+                                                <constraint firstItem="1DK-Vm-8HS" firstAttribute="leading" secondItem="Y0p-s9-E3d" secondAttribute="leading" id="Pes-Qp-gZR"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="365" height="336"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="1DK-Vm-8HS" id="Cbm-4X-OKR"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tjB-1k-EJn" firstAttribute="top" secondItem="V4r-IC-JOR" secondAttribute="top" id="ZG6-ue-dXQ"/>
+                            <constraint firstItem="V4r-IC-JOR" firstAttribute="bottom" secondItem="tjB-1k-EJn" secondAttribute="bottom" id="mvS-mh-5NF"/>
+                            <constraint firstItem="tjB-1k-EJn" firstAttribute="leading" secondItem="V4r-IC-JOR" secondAttribute="leading" id="vpw-nY-dDb"/>
+                            <constraint firstItem="V4r-IC-JOR" firstAttribute="trailing" secondItem="tjB-1k-EJn" secondAttribute="trailing" id="wM0-48-z1w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V4r-IC-JOR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Feed" id="xob-Zc-R8S">
+                        <barButtonItem key="rightBarButtonItem" title="My Profile" id="l9p-r9-35n">
+                            <connections>
+                                <action selector="profileButtonPressed:" destination="n5S-mt-gjg" id="fSX-21-ncB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="tjB-1k-EJn" id="jg1-5A-0JN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvZ-pf-8bG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739.13043478260875" y="-29.464285714285712"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q85-85-43N">
+            <objects>
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="0Li-Wb-iuz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="u3d-If-pbC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n5S-mt-gjg" kind="relationship" relationship="rootViewController" id="RaA-Dm-203"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tR-Cp-7e9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-171.01449275362319" y="-29.464285714285712"/>
+        </scene>
+    </scenes>
+</document>
