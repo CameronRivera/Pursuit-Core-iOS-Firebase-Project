@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DB66762D6C43B22D37CD4FB /* Pods_Pursuitstgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83FB3B8F5ED51841CEBE420 /* Pods_Pursuitstgram.framework */; };
+		C4A34C122416D61400E37CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C112416D61400E37CC4 /* AppDelegate.swift */; };
+		C4A34C142416D61400E37CC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C132416D61400E37CC4 /* SceneDelegate.swift */; };
+		C4A34C1B2416D61600E37CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A34C1A2416D61600E37CC4 /* Assets.xcassets */; };
+		C4A34C1E2416D61600E37CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A34C1C2416D61600E37CC4 /* LaunchScreen.storyboard */; };
+		C4A34C2E2416D72F00E37CC4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C2D2416D72F00E37CC4 /* LoginViewController.swift */; };
+		C4A34C302416D89200E37CC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4A34C2F2416D89200E37CC4 /* GoogleService-Info.plist */; };
+		C4A34C322416DAC800E37CC4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C312416DAC800E37CC4 /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65DBB252E30056E75CBA5988 /* Pods-Pursuitstgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pursuitstgram.release.xcconfig"; path = "Target Support Files/Pods-Pursuitstgram/Pods-Pursuitstgram.release.xcconfig"; sourceTree = "<group>"; };
+		C4A34C0E2416D61400E37CC4 /* Pursuitstgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pursuitstgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A34C112416D61400E37CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4A34C132416D61400E37CC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C4A34C1A2416D61600E37CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4A34C1D2416D61600E37CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4A34C1F2416D61600E37CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A34C2D2416D72F00E37CC4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C4A34C2F2416D89200E37CC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4A34C312416DAC800E37CC4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C83FB3B8F5ED51841CEBE420 /* Pods_Pursuitstgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pursuitstgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA72902406D86658D8F2E02B /* Pods-Pursuitstgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pursuitstgram.debug.xcconfig"; path = "Target Support Files/Pods-Pursuitstgram/Pods-Pursuitstgram.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4A34C0B2416D61400E37CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DB66762D6C43B22D37CD4FB /* Pods_Pursuitstgram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B059011DABD9782A1C9E1495 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C83FB3B8F5ED51841CEBE420 /* Pods_Pursuitstgram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4A34C052416D61400E37CC4 = {
+			isa = PBXGroup;
+			children = (
+				C4A34C102416D61400E37CC4 /* Pursuitstgram */,
+				C4A34C0F2416D61400E37CC4 /* Products */,
+				DD384A88AA0F231E3B5ACDC4 /* Pods */,
+				B059011DABD9782A1C9E1495 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4A34C0F2416D61400E37CC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4A34C0E2416D61400E37CC4 /* Pursuitstgram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4A34C102416D61400E37CC4 /* Pursuitstgram */ = {
+			isa = PBXGroup;
+			children = (
+				C4A34C2A2416D6FA00E37CC4 /* SupportingFiles */,
+				C4A34C2C2416D70700E37CC4 /* Cells */,
+				C4A34C2B2416D70000E37CC4 /* Storyboards */,
+				C4A34C292416D6F300E37CC4 /* Services */,
+				C4A34C282416D6EE00E37CC4 /* Views */,
+				C4A34C272416D6E600E37CC4 /* Controllers */,
+				C4A34C262416D6D600E37CC4 /* Extensions */,
+				C4A34C1F2416D61600E37CC4 /* Info.plist */,
+				C4A34C2F2416D89200E37CC4 /* GoogleService-Info.plist */,
+			);
+			path = Pursuitstgram;
+			sourceTree = "<group>";
+		};
+		C4A34C262416D6D600E37CC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C4A34C272416D6E600E37CC4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4A34C2D2416D72F00E37CC4 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C4A34C282416D6EE00E37CC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4A34C312416DAC800E37CC4 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4A34C292416D6F300E37CC4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4A34C2A2416D6FA00E37CC4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C4A34C112416D61400E37CC4 /* AppDelegate.swift */,
+				C4A34C132416D61400E37CC4 /* SceneDelegate.swift */,
+				C4A34C1A2416D61600E37CC4 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C4A34C2B2416D70000E37CC4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C4A34C1C2416D61600E37CC4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C4A34C2C2416D70700E37CC4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DD384A88AA0F231E3B5ACDC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA72902406D86658D8F2E02B /* Pods-Pursuitstgram.debug.xcconfig */,
+				65DBB252E30056E75CBA5988 /* Pods-Pursuitstgram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4A34C0D2416D61400E37CC4 /* Pursuitstgram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A34C222416D61600E37CC4 /* Build configuration list for PBXNativeTarget "Pursuitstgram" */;
+			buildPhases = (
+				88218443001420BAF038A033 /* [CP] Check Pods Manifest.lock */,
+				C4A34C0A2416D61400E37CC4 /* Sources */,
+				C4A34C0B2416D61400E37CC4 /* Frameworks */,
+				C4A34C0C2416D61400E37CC4 /* Resources */,
+				2F26500D3690D09167BBFFE8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pursuitstgram;
+			productName = Pursuitstgram;
+			productReference = C4A34C0E2416D61400E37CC4 /* Pursuitstgram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4A34C062416D61400E37CC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Cameron Rivera";
+				TargetAttributes = {
+					C4A34C0D2416D61400E37CC4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C4A34C092416D61400E37CC4 /* Build configuration list for PBXProject "Pursuitstgram" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4A34C052416D61400E37CC4;
+			productRefGroup = C4A34C0F2416D61400E37CC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4A34C0D2416D61400E37CC4 /* Pursuitstgram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4A34C0C2416D61400E37CC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A34C1E2416D61600E37CC4 /* LaunchScreen.storyboard in Resources */,
+				C4A34C302416D89200E37CC4 /* GoogleService-Info.plist in Resources */,
+				C4A34C1B2416D61600E37CC4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F26500D3690D09167BBFFE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pursuitstgram/Pods-Pursuitstgram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pursuitstgram/Pods-Pursuitstgram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pursuitstgram/Pods-Pursuitstgram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88218443001420BAF038A033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pursuitstgram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4A34C0A2416D61400E37CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A34C2E2416D72F00E37CC4 /* LoginViewController.swift in Sources */,
+				C4A34C122416D61400E37CC4 /* AppDelegate.swift in Sources */,
+				C4A34C322416DAC800E37CC4 /* LoginView.swift in Sources */,
+				C4A34C142416D61400E37CC4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4A34C1C2416D61600E37CC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4A34C1D2416D61600E37CC4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4A34C202416D61600E37CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4A34C212416D61600E37CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4A34C232416D61600E37CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA72902406D86658D8F2E02B /* Pods-Pursuitstgram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D2PJ2UC46;
+				INFOPLIST_FILE = Pursuitstgram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameronrivera.Pursuitstgram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4A34C242416D61600E37CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65DBB252E30056E75CBA5988 /* Pods-Pursuitstgram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D2PJ2UC46;
+				INFOPLIST_FILE = Pursuitstgram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameronrivera.Pursuitstgram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4A34C092416D61400E37CC4 /* Build configuration list for PBXProject "Pursuitstgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A34C202416D61600E37CC4 /* Debug */,
+				C4A34C212416D61600E37CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A34C222416D61600E37CC4 /* Build configuration list for PBXNativeTarget "Pursuitstgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A34C232416D61600E37CC4 /* Debug */,
+				C4A34C242416D61600E37CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4A34C062416D61400E37CC4 /* Project object */;
+}
