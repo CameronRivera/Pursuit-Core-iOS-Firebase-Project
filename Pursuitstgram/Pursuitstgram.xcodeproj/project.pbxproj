@@ -20,6 +20,10 @@
 		C4A34C382416F1C500E37CC4 /* UserAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A34C372416F1C500E37CC4 /* UserAccount.storyboard */; };
 		C4A34C3A2416F3EE00E37CC4 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C392416F3EE00E37CC4 /* FeedCell.swift */; };
 		C4A34C3C2416F46D00E37CC4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C3B2416F46D00E37CC4 /* FeedViewController.swift */; };
+		C4A34C3E2416F6C500E37CC4 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C3D2416F6C500E37CC4 /* EmptyStateView.swift */; };
+		C4A34C402417036800E37CC4 /* FirestoreHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C3F2417036800E37CC4 /* FirestoreHandler.swift */; };
+		C4A34C43241703A200E37CC4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C42241703A200E37CC4 /* Photo.swift */; };
+		C4A34C45241706C700E37CC4 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C44241706C700E37CC4 /* DateConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		C4A34C372416F1C500E37CC4 /* UserAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserAccount.storyboard; sourceTree = "<group>"; };
 		C4A34C392416F3EE00E37CC4 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		C4A34C3B2416F46D00E37CC4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C4A34C3D2416F6C500E37CC4 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		C4A34C3F2417036800E37CC4 /* FirestoreHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreHandler.swift; sourceTree = "<group>"; };
+		C4A34C42241703A200E37CC4 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C4A34C44241706C700E37CC4 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 		C83FB3B8F5ED51841CEBE420 /* Pods_Pursuitstgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pursuitstgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA72902406D86658D8F2E02B /* Pods-Pursuitstgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pursuitstgram.debug.xcconfig"; path = "Target Support Files/Pods-Pursuitstgram/Pods-Pursuitstgram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +91,7 @@
 		C4A34C102416D61400E37CC4 /* Pursuitstgram */ = {
 			isa = PBXGroup;
 			children = (
+				C4A34C412417038D00E37CC4 /* Models */,
 				C4A34C2A2416D6FA00E37CC4 /* SupportingFiles */,
 				C4A34C2C2416D70700E37CC4 /* Cells */,
 				C4A34C2B2416D70000E37CC4 /* Storyboards */,
@@ -117,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				C4A34C312416DAC800E37CC4 /* LoginView.swift */,
+				C4A34C3D2416F6C500E37CC4 /* EmptyStateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				C4A34C332416E38D00E37CC4 /* AuthenticationHandler.swift */,
+				C4A34C3F2417036800E37CC4 /* FirestoreHandler.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -135,6 +146,7 @@
 				C4A34C112416D61400E37CC4 /* AppDelegate.swift */,
 				C4A34C132416D61400E37CC4 /* SceneDelegate.swift */,
 				C4A34C1A2416D61600E37CC4 /* Assets.xcassets */,
+				C4A34C44241706C700E37CC4 /* DateConverter.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -154,6 +166,14 @@
 				C4A34C392416F3EE00E37CC4 /* FeedCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		C4A34C412417038D00E37CC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4A34C42241703A200E37CC4 /* Photo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DD384A88AA0F231E3B5ACDC4 /* Pods */ = {
@@ -281,11 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A34C402417036800E37CC4 /* FirestoreHandler.swift in Sources */,
+				C4A34C3E2416F6C500E37CC4 /* EmptyStateView.swift in Sources */,
 				C4A34C3A2416F3EE00E37CC4 /* FeedCell.swift in Sources */,
 				C4A34C2E2416D72F00E37CC4 /* LoginViewController.swift in Sources */,
 				C4A34C122416D61400E37CC4 /* AppDelegate.swift in Sources */,
 				C4A34C322416DAC800E37CC4 /* LoginView.swift in Sources */,
 				C4A34C142416D61400E37CC4 /* SceneDelegate.swift in Sources */,
+				C4A34C43241703A200E37CC4 /* Photo.swift in Sources */,
+				C4A34C45241706C700E37CC4 /* DateConverter.swift in Sources */,
 				C4A34C362416E72100E37CC4 /* UIViewController+extensions.swift in Sources */,
 				C4A34C3C2416F46D00E37CC4 /* FeedViewController.swift in Sources */,
 				C4A34C342416E38D00E37CC4 /* AuthenticationHandler.swift in Sources */,

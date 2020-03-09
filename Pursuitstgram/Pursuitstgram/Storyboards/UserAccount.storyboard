@@ -62,6 +62,11 @@
                         <viewLayoutGuide key="safeArea" id="V4r-IC-JOR"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Feed" id="xob-Zc-R8S">
+                        <barButtonItem key="leftBarButtonItem" title="Upload Photo" id="0dF-i6-h94">
+                            <connections>
+                                <action selector="uploadPhotoButtonPressed:" destination="n5S-mt-gjg" id="ke9-9G-Gmm"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="My Profile" id="l9p-r9-35n">
                             <connections>
                                 <action selector="profileButtonPressed:" destination="n5S-mt-gjg" id="fSX-21-ncB"/>
