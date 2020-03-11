@@ -7,7 +7,13 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FeedCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
+    
+    public func configureCell(_ pic: Photo){
+        imageView.contentMode = .scaleAspectFill
+        imageView.kf.setImage(with: URL(string: pic.imageURL))
+    }
 }

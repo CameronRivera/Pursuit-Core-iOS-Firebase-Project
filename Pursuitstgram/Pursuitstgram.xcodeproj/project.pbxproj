@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4DB66762D6C43B22D37CD4FB /* Pods_Pursuitstgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83FB3B8F5ED51841CEBE420 /* Pods_Pursuitstgram.framework */; };
+		C473E05724181B0900D8E40F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C473E05624181B0900D8E40F /* ProfileView.swift */; };
+		C473E05924181B5B00D8E40F /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C473E05824181B5B00D8E40F /* PhotoDetailView.swift */; };
+		C473E05B24181B8600D8E40F /* UploadPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C473E05A24181B8600D8E40F /* UploadPhotoView.swift */; };
+		C473E05D24181BB300D8E40F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C473E05C24181BB300D8E40F /* ProfileViewController.swift */; };
+		C473E05F24181BC600D8E40F /* UploadPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C473E05E24181BC600D8E40F /* UploadPhotoController.swift */; };
+		C473E06124181BD700D8E40F /* PhotoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C473E06024181BD700D8E40F /* PhotoDetailController.swift */; };
+		C473E063241831C900D8E40F /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C473E062241831C900D8E40F /* UIImage+Extensions.swift */; };
+		C473E0652418354A00D8E40F /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C473E0642418354A00D8E40F /* StorageService.swift */; };
 		C4A34C122416D61400E37CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C112416D61400E37CC4 /* AppDelegate.swift */; };
 		C4A34C142416D61400E37CC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A34C132416D61400E37CC4 /* SceneDelegate.swift */; };
 		C4A34C1B2416D61600E37CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A34C1A2416D61600E37CC4 /* Assets.xcassets */; };
@@ -28,6 +36,14 @@
 
 /* Begin PBXFileReference section */
 		65DBB252E30056E75CBA5988 /* Pods-Pursuitstgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pursuitstgram.release.xcconfig"; path = "Target Support Files/Pods-Pursuitstgram/Pods-Pursuitstgram.release.xcconfig"; sourceTree = "<group>"; };
+		C473E05624181B0900D8E40F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C473E05824181B5B00D8E40F /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		C473E05A24181B8600D8E40F /* UploadPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoView.swift; sourceTree = "<group>"; };
+		C473E05C24181BB300D8E40F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C473E05E24181BC600D8E40F /* UploadPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoController.swift; sourceTree = "<group>"; };
+		C473E06024181BD700D8E40F /* PhotoDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailController.swift; sourceTree = "<group>"; };
+		C473E062241831C900D8E40F /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		C473E0642418354A00D8E40F /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		C4A34C0E2416D61400E37CC4 /* Pursuitstgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pursuitstgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A34C112416D61400E37CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4A34C132416D61400E37CC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				C4A34C352416E72100E37CC4 /* UIViewController+extensions.swift */,
+				C473E062241831C900D8E40F /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -118,6 +135,9 @@
 			children = (
 				C4A34C2D2416D72F00E37CC4 /* LoginViewController.swift */,
 				C4A34C3B2416F46D00E37CC4 /* FeedViewController.swift */,
+				C473E05C24181BB300D8E40F /* ProfileViewController.swift */,
+				C473E05E24181BC600D8E40F /* UploadPhotoController.swift */,
+				C473E06024181BD700D8E40F /* PhotoDetailController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,7 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				C4A34C312416DAC800E37CC4 /* LoginView.swift */,
+				C473E05624181B0900D8E40F /* ProfileView.swift */,
 				C4A34C3D2416F6C500E37CC4 /* EmptyStateView.swift */,
+				C473E05824181B5B00D8E40F /* PhotoDetailView.swift */,
+				C473E05A24181B8600D8E40F /* UploadPhotoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +159,7 @@
 			children = (
 				C4A34C332416E38D00E37CC4 /* AuthenticationHandler.swift */,
 				C4A34C3F2417036800E37CC4 /* FirestoreHandler.swift */,
+				C473E0642418354A00D8E40F /* StorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -302,9 +326,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4A34C402417036800E37CC4 /* FirestoreHandler.swift in Sources */,
+				C473E06124181BD700D8E40F /* PhotoDetailController.swift in Sources */,
+				C473E05724181B0900D8E40F /* ProfileView.swift in Sources */,
+				C473E05924181B5B00D8E40F /* PhotoDetailView.swift in Sources */,
 				C4A34C3E2416F6C500E37CC4 /* EmptyStateView.swift in Sources */,
+				C473E0652418354A00D8E40F /* StorageService.swift in Sources */,
 				C4A34C3A2416F3EE00E37CC4 /* FeedCell.swift in Sources */,
 				C4A34C2E2416D72F00E37CC4 /* LoginViewController.swift in Sources */,
+				C473E05D24181BB300D8E40F /* ProfileViewController.swift in Sources */,
+				C473E05B24181B8600D8E40F /* UploadPhotoView.swift in Sources */,
 				C4A34C122416D61400E37CC4 /* AppDelegate.swift in Sources */,
 				C4A34C322416DAC800E37CC4 /* LoginView.swift in Sources */,
 				C4A34C142416D61400E37CC4 /* SceneDelegate.swift in Sources */,
@@ -312,6 +342,8 @@
 				C4A34C45241706C700E37CC4 /* DateConverter.swift in Sources */,
 				C4A34C362416E72100E37CC4 /* UIViewController+extensions.swift in Sources */,
 				C4A34C3C2416F46D00E37CC4 /* FeedViewController.swift in Sources */,
+				C473E063241831C900D8E40F /* UIImage+Extensions.swift in Sources */,
+				C473E05F24181BC600D8E40F /* UploadPhotoController.swift in Sources */,
 				C4A34C342416E38D00E37CC4 /* AuthenticationHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

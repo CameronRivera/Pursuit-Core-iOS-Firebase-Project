@@ -27,8 +27,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         } else{
             UIViewController.showViewController(storyboardName: nil, viewControllerId: nil)
         }
-        
-        window?.rootViewController = UINavigationController(rootViewController: LoginViewController())
         window?.makeKeyAndVisible()
     }
 
