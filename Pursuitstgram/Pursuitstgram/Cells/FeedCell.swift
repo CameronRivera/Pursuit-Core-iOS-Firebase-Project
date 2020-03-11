@@ -11,9 +11,11 @@ import Kingfisher
 
 class FeedCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var infoLabel: UILabel!
     
     public func configureCell(_ pic: Photo){
         imageView.contentMode = .scaleAspectFill
         imageView.kf.setImage(with: URL(string: pic.imageURL))
+        infoLabel.text = "Posted By: \(pic.uploaderDisplayName)"
     }
 }

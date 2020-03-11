@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 import FirebaseFirestore
 
 class FeedViewController: UIViewController {
@@ -53,6 +54,11 @@ class FeedViewController: UIViewController {
         })
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        listener?.remove()
+    }
+    
     private func setEmptyState(){
         if photoArr.isEmpty {
             collectionView.backgroundView = emptyState
@@ -67,8 +73,12 @@ class FeedViewController: UIViewController {
     }
     
     @IBAction func uploadPhotoButtonPressed(_ sender: UIBarButtonItem){
-        let uploadPhotoVC = UploadPhotoController()
-        navigationController?.pushViewController(uploadPhotoVC, animated: true)
+        if let _ = Auth.auth().currentUser?.displayName {
+            let uploadPhotoVC = UploadPhotoController()
+            navigationController?.pushViewController(uploadPhotoVC, animated: true)
+        } else {
+            showAlert("Add A Display Name", "You cannot upload a photo without first adding a display name to your profile. Press the \"My Profile\" button in order to add a display name to your profile.")
+        }
     }
 
 }
@@ -91,10 +101,15 @@ extension FeedViewController: UICollectionViewDataSource{
 
 extension FeedViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width * 0.8, height: collectionView.bounds.height * 0.3)
+        return CGSize(width: collectionView.bounds.width * 0.8, height: collectionView.bounds.height * 0.4)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        return UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 10)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailVC = PhotoDetailController(photoArr[indexPath.row])
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }

@@ -63,7 +63,6 @@ class UploadPhotoController: UIViewController {
                 self?.uploadPhoto(resizedImage, docID)
             }
         }
-        
     }
     
     private func uploadPhoto(_ image: UIImage, _ docID: String){
@@ -87,8 +86,9 @@ class UploadPhotoController: UIViewController {
                 }
             } else {
                 DispatchQueue.main.async{
-                    self?.showAlert("Photo Uploaded", "Your photo was successfully uploaded.")
-                    self?.navigationController?.popViewController(animated: true)
+                    self?.showAlert("Photo Uploaded", "Your photo was successfully uploaded.") { [weak self] action in
+                        self?.navigationController?.popViewController(animated: true)
+                    }
                 }
             }
         }

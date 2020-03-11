@@ -12,9 +12,7 @@ class ProfileView: UIView {
 
     public lazy var profileImage: UIImageView = {
         let iv = UIImageView()
-        iv.contentMode = .scaleAspectFit
-        iv.layer.borderColor = UIColor.black.cgColor
-        iv.layer.borderWidth = 1.0
+        iv.contentMode = .scaleAspectFill
         iv.image = UIImage(systemName: "person")
         return iv
     }()
@@ -68,7 +66,7 @@ class ProfileView: UIView {
     private func setUpProfileImageConstraints() {
         addSubview(profileImage)
         profileImage.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([profileImage.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20), profileImage.centerXAnchor.constraint(equalTo: centerXAnchor), profileImage.heightAnchor.constraint(equalToConstant: 200), profileImage.widthAnchor.constraint(equalToConstant: 200)])
+        NSLayoutConstraint.activate([profileImage.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20), profileImage.centerXAnchor.constraint(equalTo: centerXAnchor), profileImage.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.23), profileImage.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.2)])
     }
     
     private func setUpDisplayNameTextFieldConstraints() {

@@ -12,7 +12,7 @@ import FirebaseFirestore
 import Kingfisher
 
 class ProfileViewController: UIViewController {
-
+    
     private let profileView = ProfileView()
     private let imagePicker = UIImagePickerController()
     private let storageHandler = StorageHandler()
@@ -37,13 +37,18 @@ class ProfileViewController: UIViewController {
         profileView.commitChangesButton.addTarget(self, action: #selector(commitChangesButtonPressed(_:)), for: .touchUpInside)
         navigationItem.title = "My Profile"
         imagePicker.delegate = self
+        profileView.displayNameTextField.text = Auth.auth().currentUser?.displayName
     }
     
     private func updateProfilePic(){
         guard let user = Auth.auth().currentUser else {
             return
         }
-        profileView.profileImage.kf.setImage(with: user.photoURL)
+        if let _ = user.photoURL{
+            profileView.profileImage.kf.setImage(with: user.photoURL)
+        } else {
+            profileView.profileImage.image = UIImage(systemName: "person")
+        }
     }
     
     @objc
@@ -87,7 +92,7 @@ class ProfileViewController: UIViewController {
         let request = user.createProfileChangeRequest()
         var nameString = ""
         
-        if let name = profileView.displayNameTextField.text, !name.isEmpty == false {
+        if let name = profileView.displayNameTextField.text, !name.isEmpty{
             nameString = name
         }
         
@@ -96,7 +101,7 @@ class ProfileViewController: UIViewController {
                 switch result{
                 case .failure(let error):
                     DispatchQueue.main.async{
-                    self?.showAlert("Error", "Could not upload photo to storage: \(error.localizedDescription)")
+                        self?.showAlert("Error", "Could not upload photo to storage: \(error.localizedDescription)")
                     }
                 case .success(let url):
                     request.photoURL = url
@@ -110,7 +115,6 @@ class ProfileViewController: UIViewController {
                             DispatchQueue.main.async{
                                 self?.showAlert("Profile Updated", "Your profile has been updated.")
                             }
-//                            Firestore.firestore().collection("FeedPhotos").document("*").updateData(["displayName" : nameString])
                         }
                     }
                 }

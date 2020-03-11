@@ -11,7 +11,7 @@ import Foundation
 struct DateConverter{
     static func makeMyDateIntoAString(_ date: Date) -> String{
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMMM d, YYYY h:mm a"
+        dateFormatter.dateFormat = "MMMM d, YYYY h:mm a"
         return dateFormatter.string(from: date)
     }
 }

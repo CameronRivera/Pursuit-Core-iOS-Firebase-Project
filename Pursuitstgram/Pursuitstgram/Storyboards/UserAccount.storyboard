@@ -34,19 +34,29 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1DK-Vm-8HS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="365" height="336"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="365" height="299.5"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZM-50-LFx">
+                                                    <rect key="frame" x="8" y="307.5" width="349" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="1DK-Vm-8HS" firstAttribute="top" secondItem="Y0p-s9-E3d" secondAttribute="top" id="3SA-w6-moO"/>
-                                                <constraint firstAttribute="bottom" secondItem="1DK-Vm-8HS" secondAttribute="bottom" id="MIO-Tc-3LG"/>
                                                 <constraint firstAttribute="trailing" secondItem="1DK-Vm-8HS" secondAttribute="trailing" id="NUK-0X-YbB"/>
                                                 <constraint firstItem="1DK-Vm-8HS" firstAttribute="leading" secondItem="Y0p-s9-E3d" secondAttribute="leading" id="Pes-Qp-gZR"/>
+                                                <constraint firstItem="LZM-50-LFx" firstAttribute="top" secondItem="1DK-Vm-8HS" secondAttribute="bottom" constant="8" id="RS8-6e-yPM"/>
+                                                <constraint firstAttribute="bottom" secondItem="LZM-50-LFx" secondAttribute="bottom" constant="8" id="eIR-AX-za0"/>
+                                                <constraint firstAttribute="trailing" secondItem="LZM-50-LFx" secondAttribute="trailing" constant="8" id="h8v-vv-Uvd"/>
+                                                <constraint firstItem="LZM-50-LFx" firstAttribute="leading" secondItem="Y0p-s9-E3d" secondAttribute="leading" constant="8" id="uXp-ZM-FtD"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="365" height="336"/>
                                         <connections>
                                             <outlet property="imageView" destination="1DK-Vm-8HS" id="Cbm-4X-OKR"/>
+                                            <outlet property="infoLabel" destination="LZM-50-LFx" id="oMr-Hf-h3e"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
